@@ -7,4 +7,3 @@ Raw data is imported directly from CITES csv downloads.
 For other tables, it uses the birdcites database as initial structure:
 - taxon
 - country
-- 
