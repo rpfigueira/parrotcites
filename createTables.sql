@@ -35,11 +35,11 @@ CREATE TABLE parrotcites.country (countryID varchar(2) not null primary key)
 SELECT * FROM birdcites.country;
 
 
-INSERT INTO country (countryID, country, continent, biogeo1, biogeo2, biogeo_paleo, isEU)
-VALUES ('KV', 'KOSOVO’, 'Europe', 'Palearctic','', 'Western-Palearctic', 0, 1);
+INSERT INTO country (countryID, country, continent, biogeo1, biogeo2, biogeo_paleo, isEU) 
+VALUES ("KV", "KOSOVO", "Europe", "Palearctic", "", "Western-Palearctic", 0, 1);
 
 INSERT INTO country (countryID, country, continent, biogeo1, biogeo2, biogeo_paleo, isEU)
-VALUES ('BL', '’, '', '','', '’, 0, 1);
+VALUES ("BL", "", "", "","", "", 0, 1);
 
 /* create empty country table from  previous database*/
 DROP TABLE IF EXISTS parrotcites.taxon;
