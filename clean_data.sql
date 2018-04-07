@@ -55,7 +55,7 @@ UPDATE tradedata1_origin
     WHERE
         origin REGEXP '^[A-Z]';
 
-/* SUm records by year */
+/* Sum records by year */
 DROP TABLE IF EXISTS parrotcites.tradeYear;
 CREATE TABLE parrotcites.tradeYear
 (tradeYearID integer not null auto_increment primary key)
@@ -80,3 +80,8 @@ SELECT
 FROM
     tradedata1_origin
 GROUP BY year , Appendix , taxonID , taxon , Class , 'Order' , Family , Genus , Importer , exporter_origin , Term , Unit , Purpose , Source;
+
+/*
+To analise only live animals (including eggs), the WHERE condition should be
+WHERE term IN ('eggs (live)', 'live')
+*/
